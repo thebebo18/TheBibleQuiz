@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondomenu"
+    tools:context=".preguntas">
+
+    <TextView
+        android:id="@+id/pregunt"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="42dp"
+        android:fontFamily="@font/amarante"
+        android:gravity="center"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/resp1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/resp1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="39dp"
+        android:background="#334252"
+        android:fontFamily="@font/amarante"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#3dc7be"
+        app:layout_constraintBottom_toTopOf="@+id/resp2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pregunt" />
+
+    <TextView
+        android:id="@+id/resp2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="27dp"
+        android:background="#364857"
+        android:fontFamily="@font/amarante"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#3dc7be"
+        app:layout_constraintBottom_toTopOf="@+id/resp3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resp1" />
+
+    <TextView
+        android:id="@+id/resp3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="29dp"
+        android:background="#364857"
+        android:fontFamily="@font/amarante"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#3dc7be"
+        app:layout_constraintBottom_toTopOf="@+id/BtnNext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resp2" />
+
+    <Button
+        android:id="@+id/BtnNext"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="#f75940"
+        android:fontFamily="@font/amarante"
+        android:text="SIGUIENTE"
+        android:textColor="#3dc7be"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resp3" />
+
+</android.support.constraint.ConstraintLayout>
